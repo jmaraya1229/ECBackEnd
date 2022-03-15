@@ -26,8 +26,8 @@ After selecting the database, the user has to seed the data into the database by
 After seeding the database, the application can be run by using this command in the terminal `npm start`. If it does not work, `node server.js` will run the server. The user will know the server is running if the following console log shows in the terminal: `App listening on port 3001`.
 
 ### Walkthrough video 
-* How to source schema from MySQL and to seed the database from the command line
-![Walkthrough schema and seeding]()
+* [How to source schema from MySQL and to seed the database from the command line](https://drive.google.com/file/d/18Zbvash4Hc4WYKHcYUIyPknwTOS7hQ_v/view)
+![Walkthrough schema, seeding, and start](./assets/ECBackEndInstallation.gif)
 
 
 ## Usage
@@ -44,8 +44,8 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
     * To view all tags, the user must make a GET request and use the following line of code before clicking SEND: 
     `http://localhost:3001/api/tags`
 
-    * Walkthrough Video to GET all
-    ![Walkthrough of GET all]()
+    * [Walkthrough Video to GET all](https://drive.google.com/file/d/1g5_O_BgtCofZk4UMQFqZdmNsDH9Wa1zu/view)
+    ![Walkthrough of GET all](./assets/ECBackEndGETAll.gif)
 
 * GET one category, product, or tag by id 
 
@@ -58,8 +58,8 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
     * To view a specific tag by id, the user must make a GET request then use this line of code before clicking SEND[^1]
     `http://localhost:3001/api/tags/id#`
 
-    * Walkthrough video to GET one by id
-    ![Walkthrough video to GET one by id]()
+    * [Walkthrough video to GET one by id](https://drive.google.com/file/d/1FTRitSH4RSfLN6JVIwh9ld1ftXeDFuEq/view)
+    ![Walkthrough video to GET one by id](./assets/ECBackEndGETOne.gif)
 
 * CREATE a category, product, or tag
 
@@ -98,8 +98,8 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
             ```
         The user can edit inside of the quotation marks of the `new-tag-name` to whatever new category they would like to create. 
 
-    * Walkthrough video to create using the POST route
-    ![walkthrough POST]()
+    * [Walkthrough video to create using the POST route](https://drive.google.com/file/d/1ZgvtcNp8SYQHVk9FoqIo46UA-0Ad1Ak1/view)
+    ![walkthrough POST](./assets/ECBackEndCREATE.gif)
 
 * UPDATE a category, product, or tag by id
 
@@ -139,8 +139,8 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
             ```
         The `updated-tag-name` must be changed to the new name the user wants.
 
-    * Walkthrough video of updating through the PUT route
-    ![Walkthrough PUT]()
+    * [Walkthrough video of updating through the PUT route](https://drive.google.com/file/d/1HKSxoLsxrB8hQgs7KRE9Kbcy9cjYSv_D/view)
+    ![Walkthrough PUT](./assets/ECBackEndPUT.gif)
 
 * DELETE a category, product, or tag by id
 
@@ -152,6 +152,9 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
 
     * To delete a tag by id, the user must make a DELETE request and use this command before clicking SEND[^1] 
     `http://localhost:3001/api/tags/id#`
+
+    * [Walkthrough video to delete using the DELETE route](https://drive.google.com/file/d/1ZZIlLKL3sbEujs-OeyH2F4CQD9ssQMwT/view)
+    ![Walkthrough DELETE](./assets/ECBackEndDELETE.gif)
     
 [^1]: The user must replace `id#` at the end of the command with the specific id number of the category, product, or tag that is meant to be manipulated. 
 
