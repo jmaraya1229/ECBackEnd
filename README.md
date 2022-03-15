@@ -148,7 +148,7 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
     * To delete a tag by id, the user must make a DELETE request and use this command before clicking SEND[^2] 
     `https://localhost:3001/api/tags/id#`
     
-        The user must replace id# with the specific id number of the tag that is meant to be deleted. 
+        [^2]: The user must replace id# with the specific id number of the tag that is meant to be deleted. 
 
 ## Technologies Used
 * dotenv
