@@ -36,16 +36,13 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
 * GET all categories, products, or tags
 
     * To view all categories, the user must make a GET request and use the following line of code before clicking SEND:
-
-        `http://localhost:3001/api/categories`
+    `http://localhost:3001/api/categories`
 
     * To view all products, the user must make a GET request and use the following line of code before clicking SEND:
-
-        `http://localhost:3001/api/products`
+    `http://localhost:3001/api/products`
 
     * To view all tags, the user must make a GET request and use the following line of code before clicking SEND: 
-        
-        `http://localhost:3001/api/tags`
+    `http://localhost:3001/api/tags`
 
     * Walkthrough Video to GET all
     ![Walkthrough of GET all]()
@@ -53,16 +50,13 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
 * GET one category, product, or tag by id 
 
     * To view a specific category by id, the user must make a GET request then use this line of code before clicking SEND[^1]
-        
-        `http://localhost:3001/api/categories/id#`
+    `http://localhost:3001/api/categories/id#`
 
     * To view a specific product by id, the user must make a GET request then use this line of code before clicking SEND[^1]
-    
-        `http://localhost:3001/api/products/id#`
+    `http://localhost:3001/api/products/id#`
 
     * To view a specific tag by id, the user must make a GET request then use this line of code before clicking SEND[^1]
-
-        `http://localhost:3001/api/tags/id#`
+    `http://localhost:3001/api/tags/id#`
 
     * Walkthrough video to GET one by id
     ![Walkthrough video to GET one by id]()
@@ -70,8 +64,7 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
 * CREATE a category, product, or tag
 
     * To create a new category, the user must make a POST request with a JSON body and use this line before clicking SEND
-    
-        `http://localhost:3001/api/categories`
+    `http://localhost:3001/api/categories`
 
         * The JSON body must be formatted like this: 
             ```
@@ -79,31 +72,31 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
             "category_name" : "new-category-name"
             }
             ```
-        The user must edit inside of the quotation marks of the `new-category-name` to whatever new category they would like to create. 
+        The user can edit inside of the quotation marks of the `new-category-name` to whatever new category they would like to create. 
 
     * To create a new product, the user must make a POST request with a JSON body and use this line before clicking SEND
-    
-        `http://localhost:3001/api/products`
+    `http://localhost:3001/api/products`
 
         * The JSON body must be formatted like this: 
             ```
             {
-            "product_name" : "new-product-name"
-            "price" : ""
+            "product_name": "new-product-name",
+            "price": 200.00,
+            "stock": 3,
+            "tagIds": [1, 2, 3, 4]
             }
             ```
-        The user must edit inside of the quotation marks of the `new-product-name` to whatever new category they would like to create. The user may also edit within the quotation marks for the price if they want to add a price to the product. 
+            The user can edit inside of the quotation marks of the `new-product-name` to whatever new product they would like to create. The user will also be able to edit the price, stock, or tagIds by changing the integer value to any number. 
 
     * To create a new tag, the user must make a POST request with a JSON body and use this line before clicking SEND
-
-        `http://localhost:3001/api/tags`
+    `http://localhost:3001/api/tags`
         * The JSON body must be formatted like this: 
             ```
             {
             "tag_name" : "new-tag-name"
             }
             ```
-        The user must edit inside of the quotation marks of the `new-tag-name` to whatever new category they would like to create. 
+        The user can edit inside of the quotation marks of the `new-tag-name` to whatever new category they would like to create. 
 
     * Walkthrough video to create using the POST route
     ![walkthrough POST]()
@@ -111,29 +104,29 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
 * UPDATE a category, product, or tag by id
 
     * To update an existing category, the user must make a PUT request with a JSON body and use this line before clicking SEND[^1]
-
     `http://localhost:3001/api/categories/id#`
 
-
-        The JSON body should look like this: 
+        * The JSON body should look like this: 
         ```
         {
         "category_name" : "updated-category-name"
         }
         ```
-        The `updated-category-name` must be changed to the new name the user wants. 
+        The `updated-category-name` can be changed to the new name the user wants. 
 
     * To update an existing product, the user must make a PUT request with a JSON body and use this line before clicking SEND[^1]
-
     `http://localhost:3001/api/products/id#`
 
         * The JSON body should look like this: 
             ```
             {
-            "product_name" : "updated-product-name"
+            "product_name": "updated-product-name",
+            "price": 200.00,
+            "stock": 3,
+            "tagIds": [1, 2, 3, 4]
             }
             ```
-        The `updated-product-name` must be changed to the new name the user wants.the other stuff can be updated as well. 
+        The `updated-product-name` can be changed to the new name the user wants, and the price, stock, and tagIds can be changed to a new integer if desired. 
 
     * To update an existing tag, the user must make a PUT request with a JSON body and use this line before clicking SEND[^1]
     `http://localhost:3001/api/tags/id#`
@@ -160,7 +153,7 @@ The following bullets show how to use the GET, POST, PUT, and DELETE routes on I
     * To delete a tag by id, the user must make a DELETE request and use this command before clicking SEND[^1] 
     `http://localhost:3001/api/tags/id#`
     
-[^1]: The user must replace id# with the specific id number of the category, product, or tag that is meant to be manipulated. 
+[^1]: The user must replace `id#` at the end of the command with the specific id number of the category, product, or tag that is meant to be manipulated. 
 
 ## Technologies Used
 * dotenv
